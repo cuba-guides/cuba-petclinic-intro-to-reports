@@ -27,10 +27,17 @@
                     dataContainer="visitsDc"
                     width="100%">
             <actions>
-                <action id="create" type="create" openType="DIALOG"/>
-                <action id="edit" type="edit"
-                        openType="DIALOG"/>
+                <action id="create" type="create"/>
+                <action id="edit" type="edit"/>
                 <action id="remove" type="remove"/>
+                <action id="lastMonthReport"
+                        caption="msg://lastMonthReport"
+
+                />
+                <action id="lastQuarterReport"
+                        caption="msg://lastQuarterReport"
+
+                />
             </actions>
             <columns>
                 <column id="visitDate"/>
@@ -43,6 +50,7 @@
                 <button id="createBtn" action="visitsTable.create"/>
                 <button id="editBtn" action="visitsTable.edit"/>
                 <button id="removeBtn" action="visitsTable.remove"/>
+                <button id="lastMonthReportBtn" action="visitsTable.lastMonthReport"/>
             </buttonsPanel>
         </groupTable>
         <hbox id="lookupActions" spacing="true" visible="false">
