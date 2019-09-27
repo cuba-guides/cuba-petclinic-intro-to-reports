@@ -45,6 +45,8 @@
         <hbox id="editActions" spacing="true">
             <button action="windowCommitAndClose"/>
             <button action="windowClose"/>
+            <button id="patientRecordBtn"
+                    caption="msg://patientRecord"/>
         </hbox>
     </layout>
 </window>
